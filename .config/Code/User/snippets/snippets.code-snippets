@@ -1,0 +1,101 @@
+{
+  "class SomeWidget extends StatefulWidget": {
+    "scope": "dart",
+    "prefix": "sfw",
+    "body": [
+      "class ${1:name} extends StatefulWidget {",
+      "\t const ${1}({ Key key }) : super(key: key);",
+      "",
+      "\t@override",
+      "\t_${1}State createState() => _${1}State();",
+      "}",
+      "",
+      "class _${1}State extends State<${1}> {",
+      "\t@override",
+      "\tvoid initState() {",
+      "\t\t// TODO: implement initState",
+      "\t\tsuper.initState();",
+      "\t}",
+      "",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn $0",
+      "\t}",
+      "}"
+    ]
+  },
+  "func SomeFunc(args) ret{ ... }": {
+    "scope": "go",
+    "prefix": "func",
+    "body": ["func ${1:name}(${2:args}) ${3:return} {", "\t$0", "}"]
+  },
+  "func (r Receiver) SomeMethod(args) ret{ ... }": {
+    "scope": "go",
+    "prefix": "meth",
+    "body": [
+      "func (${1:receiver}) ${2:name}(${3:args}) ${4:return} {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "w http.ResponseWriter, r *http.Request": {
+    "scope": "go",
+    "prefix": "wr",
+    "body": "w http.ResponseWriter, r *http.Request"
+  },
+  "type MyStruct struct": {
+    "scope": "go",
+    "prefix": "struct",
+    "body": ["type ${1:name} struct {", "\t$0", "}"]
+  },
+  "func TestSomething(t *testing.T)": {
+    "scope": "go",
+    "prefix": "test",
+    "body": ["func Test${1:name}(t *testing.T) {", "\t$0", "}"]
+  },
+  "package main": {
+    "scope": "go",
+    "prefix": "main",
+    "body": ["package main", "", "func main() {", "\t$0", "}"]
+  },
+  "type SomeInterface interface": {
+    "scope": "go",
+    "prefix": "inter",
+    "body": ["type ${1:name} interface {", "\t$0", "}"]
+  },
+  "if err != nil": {
+    "scope": "go",
+    "prefix": "iferr",
+    "body": ["if err != nil {", "\t$0", "}", ""]
+  },
+  "return something, nil": {
+    "scope": "go",
+    "prefix": "rsn",
+    "body": "return $0, nil"
+  },
+  "return nil, err": {
+    "scope": "go",
+    "prefix": "rne",
+    "body": "return nil, ${0:err}"
+  },
+  "return nil": {
+    "scope": "go",
+    "prefix": "rn",
+    "body": "return nil"
+  },
+  "return err": {
+    "scope": "go",
+    "prefix": "re",
+    "body": "return err"
+  },
+  "A struct field with a json tag": {
+    "scope": "go",
+    "prefix": "jf",
+    "body": "${1:Name} ${2:string} `json:\"${1/(.*)/${1:/downcase}/}\"`"
+  },
+  "Dump an object": {
+    "scope": "go",
+    "prefix": "dump",
+    "body": "fmt.Printf(\"%#v\\n\", $1)"
+  }
+}

@@ -1,0 +1,61 @@
+[
+    // Place your key bindings in this file to overwrite the defaults
+    {
+        "key": "tab",
+        "command": "acceptSelectedSuggestionOnEnter",
+        "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
+    },
+    {
+        "key": "enter",
+        "command": "-acceptSelectedSuggestionOnEnter",
+        "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+numpad_add",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "shift+ctrl+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "ctrl+numpad_subtract",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "shift+ctrl+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "ctrl+numpad0",
+        "command": "editor.action.fontZoomReset"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "editor.action.fontZoomReset"
+    },
+    {
+      "key": "ctrl+shift+w ctrl+shift+w",
+      "command": "workbench.action.closeWindow"
+    },
+    {
+      "key": "ctrl+shift+w",
+      "command": "-workbench.action.closeWindow"
+    },
+]
